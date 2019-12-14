@@ -13,7 +13,7 @@
   notify: restart carts service
 
 - name: copy supervisor config for frontend
-  xxx:
+  copy:
     src: carts.supervisor.conf
     dest: /etc/supervisor/conf.d/carts.conf
     mode: 0755
